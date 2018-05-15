@@ -11,28 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+
 
 	<style type="text/css">
 		html,
@@ -44,28 +23,25 @@
 	</style>
 </head>
 
-<body class="body" style="background-color:#f6f6f6">
-	<div class="container-fluid" style="min-height:95%; ">
-		<div class="row">
-			  <div class="col-sm-2">
-				  <br>
-				  <center>
-					<img src="{% static 'personal/img/profile.png' %}" class="img-responsive" style='max-height:100px;' alt="face">
-				  </center>
-			  </div>
-			  <div class="col-sm-8">
-				  <br>
-				  <center>
-				  <h2>Tinkerer's Laboratory</h2>
-				  </center>
-			  </div>
-		</div><hr>
+<body class="dashboard" style="background-color:#f6f6f6">
+	
+		
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name" align="center"><a href="#">Tinkerer's Laboratory</a></h1>
+
+        </div>
+  
+    </div>
 
 		<div class="row">
+		  <div class="col-sm-12">
 		  
-		  <div class="col-sm-10">
-		  
-			<div class='jumbotron'>
+			<div class='jumbotron' align="center">
 			<br><br>
 			   {% block content %}
 			   {% endblock %}	
@@ -73,6 +49,7 @@
 		  </div>
 		</div> 
 	</div>
+	<div id="container">
 	<footer>
 		<div class="container-fluid" style='margin-left:15px'>
 			<p><a href="contact/" target="blank">Contact</a> |  <a href="https://twitter.com/iitb_moodi" target="blank">Twitter</a> | <a href="https://www.facebook.com/iitb.moodindigo/" target="blank">Facebook</a></p>

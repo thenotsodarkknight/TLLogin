@@ -4,11 +4,11 @@
 
 {% block content %}
 <div = "container-fluid">
-  <h2 align="center">Sign up</h2>
-  <form method="post" align="center">
+  <h2 align="left" style="margin-left: 48%">Sign up</h2>
+  <form method="post" align="left" style="margin-left: 15%">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" align="center">Sign up</button>
+    <button type="submit" align="left" style="margin-left: 40%">Sign up</button>
   </form>
   </div>
 {% endblock %}
